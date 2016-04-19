@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewSed2"
+        android:minHeight="275dp"
+        android:maxHeight="225dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="50dp"
+        android:src="@drawable/igneoustitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/buttonS"
+        android:height="62dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imageViewSed2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="114dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FFC702"
+        android:background="#003cb3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textAllCaps="false"
+        android:id="@+id/buttonS2"
+        android:height="62dp"
+        android:layout_below="@+id/buttonS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FFC702"
+        android:background="#003cb3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can you see the individual minerals?"
+        android:id="@+id/textViewS"
+        android:minHeight="120dp"
+        android:paddingBottom="5dp"
+        android:height = "50dp"
+        android:gravity="center"
+        android:layout_below="@+id/imageViewSed2"
+        android:layout_alignRight="@+id/imageViewSed2"
+        android:layout_alignEnd="@+id/imageViewSed2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backButtonS"
+        android:textAllCaps="false"
+        android:minWidth="120dp"
+        android:layout_below="@+id/buttonS2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:textColor="#FFC702"
+        android:background="#003cb3"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/restartButtonS"
+        android:textAllCaps="false"
+        android:minWidth="120dp"
+        android:textColor="#FFC702"
+        android:background="#003cb3"
+        android:layout_alignTop="@+id/backButtonS"
+        android:layout_alignRight="@+id/buttonS2"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
