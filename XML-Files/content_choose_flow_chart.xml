@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:id="@+id/IgneousFlow"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/SedimentaryFlow"
+        android:layout_alignRight="@+id/SedimentaryFlow"
+        android:layout_alignEnd="@+id/SedimentaryFlow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src = "@drawable/igbutton"
+        />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:id="@+id/SedimentaryFlow"
+        android:layout_marginTop="99dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src = "@drawable/sbutton"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:id="@+id/MetaFlow"
+        android:layout_below="@+id/IgneousFlow"
+        android:layout_alignLeft="@+id/IgneousFlow"
+        android:layout_alignStart="@+id/IgneousFlow"
+        android:layout_alignRight="@+id/IgneousFlow"
+        android:layout_alignEnd="@+id/IgneousFlow"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src = "@drawable/mtbutton"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which is it?"
+        android:id="@+id/WhichRock"
+        android:textAllCaps="false"
+        android:layout_marginTop="35dp"
+        android:capitalize="none"
+        android:layout_below="@+id/MetaFlow"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
