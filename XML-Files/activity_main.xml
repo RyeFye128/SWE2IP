@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/firstButton"
+        android:id="@+id/rockIdent"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/imageView"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_weight = "1"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/titlepic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RockLookup"
+        android:id="@+id/rockLookup"
+        android:layout_below="@+id/rockIdent"
+        android:layout_alignRight="@+id/rockIdent"
+        android:layout_alignEnd="@+id/rockIdent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:layout_weight = "1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/MineralLookup"
+        android:id="@+id/mineralLookup"
+        android:layout_below="@+id/rockLookup"
+        android:layout_alignRight="@+id/rockLookup"
+        android:layout_alignEnd="@+id/rockLookup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:layout_weight = "2"
+        android:enabled="false"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/aboutButton"
+        android:layout_below="@+id/mineralLookup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:layout_weight = "2"
+        />
+
+</RelativeLayout>
